@@ -26,7 +26,7 @@ npm install
 ### 3. Create a .env file
 
 ```bash
-API_KEY=YOUR_GOOGLE_GENAI_KEY
+apiKey=YOUR_GOOGLE_GENAI_KEY
 ```
 
 ### 4. Start the server
@@ -43,4 +43,5 @@ http://localhost:8795
 
 - **Name:** Yousef Mohamed Gaber
 - **Email:** yousefgaber2792008@gmail.com
+
 - **Discord:** 0y_1
