@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="logo">
+                <img src="public/images/logo.png" alt="burgier">
+                <h1>burgier</h1>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="links" id="nav-links">
+                 <ul>
+                    <li><a href="/home#home">Home</a></li>
+                    <li><a href="/home#ai-assistant">AI</a></li>
+                    <li><a href="/home#recipes">Recipes</a></li>
+                    <li><a href="/home#search">Search</a></li>
+                    <li><a href="/home#categories">Categories</a></li>
+                    <li><a style="background-color: rgba(22, 110, 110, 0.696); padding: 10px; border-radius: 6px;" href="/login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="heroSection" id="home">
+            <img src="public/images/hero-desktop.png" class="hero-img-desktop" alt="">
+            <img src="public/images/hero-mobile.jpg" class="hero-img-mobile" alt="">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <img src="public/images/logo.png" alt="">
+                <div>
+                    <h1>Best Burgers Ever</h1>
+                    <p>Your guide to an amazing burger</p>
+                </div>
+            </div>
+        </div>
+        <div class="ai" id="ai-assistant">
+            <div class="title">
+                <div class="content">
+                    <h1> <i class="fa-solid fa-robot"></i> Burgier AI Assistant</h1>
+                    <p>Your guidance for a great recipes</p>
+                </div>
+                <div class="card">
+                    <div class="top">
+                        <img src="public/images/logo.png" alt="">
+                        <h1>Burgier</h1>
+                    </div>
+                    <div class="body">
+                        <div class="answer">
+                            <img src="public/images/logo.png" alt="">
+                            <p>Iam Burgier, an expert chef especially in burger stuff! how can I help you today?</p>
+                        </div>
+                        <br>
+                        <div class="question">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                            <p>what is your role?</p>
+                        </div>
+                        <br>
+                        <div class="answer">
+                            <img src="public/images/logo.png" alt="">
+                            <p>My role is to help you how to "cook" using the simplest ingredients and how to calculate calories.</p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <a href="/login">Login</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="recipes" id="recipes">
+            <h1>Popular Recipes</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/cheeseburger.jpg" alt="">
+                    <h2>Cheeseburger</h2>
+                    <p>A cheeseburger with a juicy beef patty, melted cheese, tomato, lettuce, and sauces.</p>
+                    <center>
+                        <a onclick="cheeseburger()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/chickensandwich.jpg" alt="">
+                    <h2>Chicken Sandwich</h2>
+                    <p>A juicy chicken fillet in a soft bun with simple toppings. A lighter, tasty alternative to a cheeseburger.</p>
+                    <center>
+                        <a onclick="chickensandwich()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/macandcheese.jpg" alt="">
+                    <h2>Mac and cheese</h2>
+                    <p>A creamyy, cheesy pasta dish that's quick, comforting, and perfect as a main or a side dish.</p>
+                    <center>
+                        <a onclick="macandcheese()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/frenchfries.jpg" alt="">
+                    <h2>French Fries</h2>
+                    <p>Crispy, golden potato fries that are perfect as a snack or side dish. Easy to make and loved by kids.</p>
+                    <center>
+                        <a onclick="fries()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/veggi.jpg" alt="">
+                    <h2>Veggi wrap</h2>
+                    <p>A fresh and tasty wrap filled with colorful vegetables and cheese. A healthy, light meal that’s easy to make.</p>
+                    <center>
+                        <a onclick="veggi()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/grilledsalmon.jpg" alt="">
+                    <h2>Grilled Salmon</h2>
+                    <p>A tender and flavorful fillet, lightly seasoned and cooked to perfection. Rich in protein and healthy omega-3 fats.</p>
+                    <center>
+                        <a onclick="salmon()" style="cursor: pointer;">More Info</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="ai-search" id="search">
+            <h1><i class="fa-solid fa-search"></i> Ingredient-based search</h1>
+            <p>Make the best meal based on the ingredients you have!</p>
+            <br>
+            <div class="card">
+                <div class="top">
+                    <img src="public/images/logo.png" alt="" srcset="">
+                    <h2>Burgier Ingredient Search</h2>
+                </div>
+                <div class="body">
+                    <div class="answer">
+                        <img src="public/images/logo.png" alt="">
+                        <p>Iam Burgier, an expert chef that can help you make cool stuff based on the ingredients you have! how can I help you today?</p>
+                    </div>
+                    <div class="question">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                        <p>I have tomatoes, lettuce, cheese, and a burger patty. what can I make?</p>
+                    </div>
+                    <div class="answer">
+                        <img src="public/images/logo.png">
+                        <div class="text-content">
+                            🍔 You can make a delicious "Classic Cheeseburger"! Here's a simple recipe:
+                            <h3>Ingredients:</h3>
+                            1 burger patty
+                            <br>1 slice of cheddar cheese
+                            <br>2 slices of tomato
+                            <br>Lettuce leaves
+                            <br>Burger Bun
+                            <br>Optional: ketchup, mustard, or mayo
+                            <h3>Instructions:</h3>
+                            <br>1- Cook the burger patty on a skillet or grill until it reaches your desired doneness.
+                            <br>2- Place a slice of cheese on top of the patty during the last minute of cooking to melt it.
+                            <br>3- Toast the burger bun lightly for extra crunch and flavor
+                            <br>4- Assemble the burger by placing the cooked patty with melted cheese on the bottom bun.
+                            <br>5- Add condiments if desired, then layer with tomato slices and lettuce leaves.
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <a href="/login">Login!</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="recipes" id="categories">
+            <h1>Healthy Picks</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/GCAB.jpg" alt="">
+                    <h2>Chicken Avocado Burger</h2>
+                    <p>Lean grilled chicken, avocado, lettuce, tomato, and light yogurt sauce</p>
+                    <center>
+                        <a onclick="GCAB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/VQB.jpg" alt="">
+                    <h2>Veggie Quinoa Burger</h2>
+                    <p>Quinoa-based patty, spinach, red onion, and tahini dressing.</p>
+                    <center>
+                        <a onclick="VQB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/PMB.jpg" alt="">
+                    <h2>Portobello Mushroom Burger</h2>
+                    <p>Grilled portobello, balsamic glaze, arugula, and tomato on a whole-grain bun.</p>
+                    <center>
+                        <a onclick="PMB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <br><br><br>
+            <h1>Budget Friendly</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/CBOB.jpg" alt="">
+                    <h2>Classic Beef & Onion Burger</h2>
+                    <p>Simple patty with caramelized onions and basic sauces.</p>
+                    <center>
+                        <a onclick="CBOB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/FEB.jpg" alt="" srcset="">
+                    <h2>Fried Egg Burger</h2>
+                    <p>Egg, cheese slice, and lettuce - super cheap ingredients.</p>
+                    <center>
+                        <a onclick="FEB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <br><br><br>
+            <h1>10-Minute Meals</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/smashburg.jpg" alt="">
+                    <h2>Smash Burger</h2>
+                    <p>Quick thin beef patty smashed on a hot pan; cheese melts instantly.</p>
+                    <center>
+                        <a onclick="SB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/TMB.jpg" alt="">
+                    <h2>Tuna Mayo Burger</h2>
+                    <p>Canned tuna, mayo, pickles, lettuce - no cooking required except to toast the bun.</p>
+                    <center>
+                        <a onclick="TMB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/CSB.jpg" alt="">
+                    <h2>Quick Chicken Strip Burger</h2>
+                    <p>Use ready-made fried chicken strips, add cheese & sauce</p>
+                    <center>
+                        <a onclick="CSB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <br><br><br>
+            <h1>High-Protein Burgers</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/DBB.jpg" alt="" srcset="">
+                    <h2>Double Beef Protein Stack</h2>
+                    <p>Two lean beef patties, low-fat cheese, lettuce, high-protein sauce.</p>
+                    <center>
+                        <a onclick="DBB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/TB.jpg" alt="" srcset="">
+                    <h2>High-Protein Turkey Burger</h2>
+                    <p>Seasoned turkey breast patty with Greek yogurt dressing.</p>
+                    <center>
+                        <a onclick="TB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="public/images/BBEB.jpg" alt="" srcset="">
+                    <h2>Black Bean & Egg Burger</h2>
+                    <p>Black bean patty topped with a fried egg for extra protein.</p>
+                    <center>
+                        <a onclick="BBEB()" style="cursor: pointer;">Learn more</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h2>Burgier</h2>
+                    <p>Your AI-powered guide to delicious burgers and quick meals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/home#home">Home</a></li>
+                        <li><a href="/home#ai-assistant">AI</a></li>
+                        <li><a href="/home#recipes">Recipes</a></li>
+                        <li><a href="/home#search">Search</a></li>
+                        <li><a href="/home#categories">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: yousefgaber2792008@gmail.com</p>
+                    <p>Phone: +20 115 310 6449</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Burgier. All rights reserved.</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
